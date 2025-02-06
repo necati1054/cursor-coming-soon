@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necati Arman - Yakında</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="content" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="500">
+            <div class="profile">
+                <div class="avatar">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+            <div class="text-content">
+                <h1>necatiarman.dev</h1>
+                <h2>Yakında Burada</h2>
+                <p>Yazılım dünyasına yeni bir bakış açısı getiriyoruz.</p>
+            </div>
+            <div class="countdown" data-tilt data-tilt-max="10">
+                <div class="launch-text">
+                    <span class="highlight">Çok Yakında</span>
+                    <span class="launch-desc">Sizlerle Buluşuyoruz</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/necatiarman/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:necati.arman1054@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 160,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": ["#64ffda", "#a8b2d1", "#8892b0", "#ccd6f6"]
+                    },
+                    "shape": {
+                        "type": ["circle", "triangle", "polygon"],
+                        "polygon": {
+                            "nb_sides": 6
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.6,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 0.8,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 3,
+                            "size_min": 0.3,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#64ffda",
+                        "opacity": 0.2,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "bounce",
+                        "bounce": true,
+                        "attract": {
+                            "enable": true,
+                            "rotateX": 1200,
+                            "rotateY": 1500
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": ["grab", "bubble"]
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 180,
+                            "line_linked": {
+                                "opacity": 0.8
+                            }
+                        },
+                        "bubble": {
+                            "distance": 200,
+                            "size": 6,
+                            "duration": 0.3,
+                            "opacity": 1,
+                            "speed": 3
+                        },
+                        "push": {
+                            "particles_nb": 6
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+
+            VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+                max: 5,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2,
+            });
+        });
+    </script>
+</body>
+</html> 
